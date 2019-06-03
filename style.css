@@ -8,11 +8,11 @@ h1 {
 }
 
 div {
-  position: absolute;
-  width: 300px;
-  border: 20px solid green;
-  padding: 50px;
-  margin: 20px;
-  left: 80px;
-  top: 80px;
+  position:absolute;
+  top:75px;
+  left:100px;
+  background:cyan;
+  border: solid green
+  width:75px;
+  height:100px;
 }
