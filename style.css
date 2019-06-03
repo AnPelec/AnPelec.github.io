@@ -4,11 +4,12 @@ body {
 }
 
 h1 {
-  color: navy;
+  color: white;
   margin-left: 20px;
 }
 
 #menu {
+  text-align: justify;
   position: absolute;
   right: 0px;
   top: 0px;
@@ -17,7 +18,12 @@ h1 {
   background-color: black;
   padding: 0px;
   margin: 0px;
-  text-align: justify;
+}
+
+span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
 }
 
 #name {
