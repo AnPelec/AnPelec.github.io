@@ -10,11 +10,12 @@ h1 {
 
 #menu {
   text-align: justify;
+  text-justify: inter-word;
   position: absolute;
   right: 0px;
   top: 0px;
   width: 50%;
-  height: 50px;
+  height: 80px;
   background-color: black;
   padding: 0px;
   margin: 0px;
@@ -31,7 +32,7 @@ span {
   left: 0px;
   top: 0px;
   width: 50%;
-  height: 50px;
+  height: 80px;
   background-color: black;
   padding: 0px;
   margin: 0px;
