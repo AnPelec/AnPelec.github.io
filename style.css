@@ -7,8 +7,8 @@ h1 {
   margin-left: 20px;
 }
 
-div.relative {
-  position: relative;
+div {
+  position: absolute;
   width: 300px;
   border: 20px solid green;
   padding: 50px;
