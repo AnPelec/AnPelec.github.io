@@ -1,50 +1,31 @@
 body {
-  background-color: lightblue;
+  background-color: silver;
   font-family: Arial, Helvetica, sans-serif
 }
 
-h1 {
-  color: black;
-}
-
-#main {
+#main-section {
   display: flex;
-  flex-direction: row;
   justify-content: center;
+  padding: 2%;
 }
 
-#menu {
-  text-align: justify;
-  text-justify: inter-word;
-  position: absolute;
-  right: 0px;
-  top: 0px;
-  width: 50%;
-  height: 40px;
-  background-color: black;
-  padding: 0px;
-  margin: 0px;
+#column-one {
+  padding: 1%;
+  display: flex;
+  flex-flow: column nowrap;
+  width: 30%;
 }
 
-span {
-  display: inline-block;
-  vertical-align: middle;
-  line-height: normal;
+#column-two {
+  padding: 1%;
+  display: flex;
+  flex-flow: column nowrap;
+  width: 30%;
 }
 
-#name {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 50%;
-  height: 40px;
-  background-color: white;
-  padding: 0px;
-  margin: 0px;
-}
-
-/* LINKS */
-a {
-  text-decoration: none;
-  color: white;
+#column-three {
+  padding: 1%;
+  display: flex;
+  flex-flow: column nowrap;
+  width: 30%;
 }
