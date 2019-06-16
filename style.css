@@ -3,9 +3,18 @@ body {
   font-family: Arial, Helvetica, sans-serif
 }
 
+div {
+  display: block;
+}
+
 h1 {
   color: white;
   margin-left: 20px;
+}
+
+#main {
+  display: flex;
+  justify-content: center;
 }
 
 #menu {
@@ -33,7 +42,7 @@ span {
   top: 0px;
   width: 50%;
   height: 40px;
-  background-color: black;
+  background-color: white;
   padding: 0px;
   margin: 0px;
 }
