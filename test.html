@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Angelos Pelecanos </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <header>
+    <div>
+      <h1> Angelos Pelecanos </h1>
+      <a href="https://www.linkedin.com/in/angelos-pelecanos/" target="_blank" style="text-decoration:no">LinkedIn</a> <br>
+      <a href="https://github.com/AnPelec" target="_blank" style="text-decoration:no">GitHub</a>
+    </div>
+    </header>
+
+
+    <div id="small-section">
+        <p>Hey there, welcome to my personal website! My name is Angelos Pelecanos. I was born and raised in <i>Cyprus</i>, a beautiful island in the Eastern Mediterranean. During my high school years, I was a pretty active participant in various <i>olympiads</i>. Right after high school, I served the National Guard for one year. During that year, I obtained the rank of <i>Second Lieutenant of Artillery</i>. I am currently an undergraduate student at MIT pursuing a double major in <i>Computer Science and Engineering</i> and <i>Mathematics</i> (Course 6-3 and 18).</p>
+    </div>
+
+    <p>A Collapsible:</p>
+    <button class="collapsible">Open Collapsible</button>
+    <div class="content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.</p>
+    </div>
+    
+    <p>Collapsible Set:</p>
+    <button class="collapsible">Open Section 1</button>
+    <div class="content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.</p>
+    </div>
+    <button class="collapsible">Open Section 2</button>
+    <div class="content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.</p>
+    </div>
+    <button class="collapsible">Open Section 3</button>
+    <div class="content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.</p>
+    </div>
+
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
+
+    <div id="main-section">
+      <div id="column-one">
+        <h2>Major Coursework</h2>
+        <i> (G): Graduate Level Class </i>
+        <p> <b> Fall 2019 </b> </p>
+        <i> 6.841/18.405 (G) Advanced Complexity Theory</i>
+        <ul>
+          <li><i>Ryan Williams</i></li>
+          <li><i>Final Project: Lifting Theorems</i></li>
+        </ul><br>
+        <i> 18.408 (G) Algorithmist's Toolkit</i>
+        <ul>
+          <li><i>Jonathan Kelner</i></li>
+        </ul><br>
+        <i> 6.854/18.415 (G) Advanced Algorithms</i>
+        <ul>
+          <li><i>David Karger, Aleksander Madry</i></li>
+          <li><i>Final Project: Space-Efficient Graph Traversal Algorithms</i></li>
+        </ul><br>
+        <i> 6.875/18.425 (G) Cryptography and Cryptanalysis</i>
+        <ul>
+          <li><i>Yael Kalai, Noah Stephens-Davidowitz</i></li>
+        </ul><br>
+        <p> <b> Spring 2019 </b> </p>
+        <i> 6.046 Design and Analysis of Algorithms</i>
+        <ul>
+          <li><i>Aleksander Madry, Bruce Tidor, Mauricio Karchmer</i></li>
+        </ul><br>
+        <i> 6.890 (G) Learning-Augmented Algorithms</i>
+        <ul>
+          <li><i>Constantinos Daskalakis, Piotr Indyk</i></li>
+          <li><i>Final Project: Learning-Augmented Binary Heaps</i></li>
+        </ul><br>
+        <i> 18.200 Principles of Discrete Mathematics</i>
+        <ul>
+          <li><i>Peter Shor, Asaf Ferber</i></li>
+          <li><i>Term Paper: 1-Factorizations of Hypergraphs</i></li>
+        </ul><br>
+        <p> <b> Fall 2018 </b> </p>
+        <i> 6.172 Performance Engineering of Software Systems</i>
+        <ul>
+          <li><i>Charles Leiserson, Tao Schardl</i></li>
+          <li><i>Optimized a parallel screensaver</i></li>
+          <li><i>Implemented an efficient memory allocator</i></li>
+          <li><i>Optimized a bot that was playing a game called Leiserchess</i></li>
+        </ul><br>
+        <i> 6.867 (G) Machine Learning</i>
+        <ul>
+          <li><i>David Sontag, Suvrit Sra, Devavrat Shah</i></li>
+          <li><i>Final Project: What can we learn from news about the stock market?</i></li>
+        </ul>
+        <p> <b> Spring 2018 </b> </p>
+        <i> 6.004 Computation Structures</i>
+        <ul>
+          <li><i>Professor Arvind, Daniel Sanchez, Silvina Hanono</i></li>
+          <li><i>Final Project: Implementing a processor in Bluespec</i></li>
+        </ul>
+        <i> 6.036 Introduction to Machine Learning</i>
+        <ul>
+          <li><i>Leslie Kaelbling, Duane Boning</i></li>
+        </ul>
+      </div>
+      
+      <div id="column-two">
+        <h2>Work Experience</h2>
+        <b> Summer 2020 </b>
+        <i> Quantitative Research Intern @ Citadel</i> <br>
+        <b> Summer 2019 </b>
+        <i> Software Engineering Intern @ Citadel</i> <br>
+        <b>Winter 2019</b>
+        <i> Quantitative Trading Intern @ Tech Square Trading</i> <br>
+        <b>Summer 2018</b>
+        <i> Software Engineering Intern @ QuantCo</i>
+        <br>
+        <h2>Teaching Experience</h2>
+        <b> Fall 2018, Spring 2019 </b>
+        <i> Lab Assistant for 6.036 Introduction to Machine Learning class</i>
+        <br>
+        <h2> Awards </h2>
+        <b>International Olympiad in Informatics <a href="http://stats.ioinformatics.org/people/3085" target="_blank">(IOI)
+          </a> </b> <br>
+        <i> Silver Medal (2017) </i>
+        <i> Bronze Medal (2015, 2016) </i><br>
+        
+        <b> International Mathematical Olympiad <a href="https://www.imo-official.org/participant_r.aspx?id=25858" target="_blank">(IMO)</a>
+        </b> <br>
+        <i> Bronze Medal (2017) </i>
+        <i> Honourable Mention (2015, 2016) </i> <br>
+      </div>
+
+      <div id="column-three">
+        <h2>Projects</h2>
+          <b>Space-Efficient Graph Traversal Algorithms</b>
+          <ul>
+            <li><i>Final Project for 6.854/18.415.</i></li>
+            <li><i>Project is split in two parts. First part consists of a survey of recent space-efficient algorithms for graph traversal. The second part consists of an implementation of the reviewed algorithms and an experimental report on their practical performance in terms of time and space required.</i></li>
+            <li><i>Worked with Thiago Bergamaschi and Aleksejs Popovs</i></li>
+            <li><a href="https://www.dropbox.com/s/in763is9a9zwoxe/6_854_Final_Project.pdf?dl=0" target="_blank"><i>Project Report</i></a></li>
+          </ul> <br>
+          <b>Lifting Theorems</b>
+          <ul>
+            <li><i>Final Project for 6.841/18.405.</i></li>
+            <li><i>Project summarizes recent results on Lifting Theorems.</i></li>
+            <li><a href="https://www.dropbox.com/s/efjgegvkx8qp6jn/6_841_Final_Project.pdf?dl=0" target="_blank"><i>Project Report</i></a></li>
+          </ul> <br>
+          <b>Learning-Augmented Binary Heaps</b>
+          <ul>
+            <li><i>Final Project for 6.890.</i></li>
+            <li><i>Used a machine learning oracle to improve the performance of the binary heap. The data structure treats the machine learning oracle as a black box and makes no assumptions regarding its type and error rate.</i></li>
+            <li><i>Worked with Adib Hasan</i></li>
+            <li><a href="https://www.dropbox.com/s/46m74w4tpud3ne7/6_890_Project.pdf?dl=0" target="_blank"><i>Project Report</i></a></li>
+            <li><a href="https://medium.com/@thankful_rose_ferret_864/how-we-sped-up-the-binary-heap-with-machine-learning-e10b3204e4e6" target="_blank"><i>Article on Medium</i></a></li>
+            <li><i>Github repository</i></li>
+          </ul> <br>
+          <b>What can we learn from news about the stock market?</b>
+          <ul>
+            <li><i>Final Project for 6.867</i></li>
+            <li><i>Used multiple topic modelling algorithms to find important events from the news headlines. Studied the correlation between the tweets of Elon Musk and Tesla's stock price over a period of time.</i></li>
+            <li><i>Completed with Caleb Noble and Dimitrios Koutentakis</i></li>
+            <li><a href="https://www.dropbox.com/s/mol812zy28yzlev/6_867_Final_Project.pdf?dl=0" target="_blank"><i>Project Report</i></a></li>
+            <li><a href="https://github.com/AnPelec/ML-Final-Project" target="_blank"><i>Github repository</i></a></li>
+          </ul> <br>
+          <b>1-Factorizations of Hypergraphs</b>
+          <ul>
+            <li><i>Term Paper for 18.200</i></li>
+            <li><i>The paper proved a theorem regarding the existence of 1-factorizations in complete and uniform hypergraphs using algebraic techniques.</i></li>
+            <li><a href="https://www.dropbox.com/s/n8btp9fbbguyfu8/18_200_Term_Paper_3.pdf?dl=0" target="_blank"><i>Paper Report</i></a></li>
+          </ul> <br>
+      </div>
+    </div>
+
+  </body>
+</html>
