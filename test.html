@@ -18,113 +18,81 @@
     <div id="small-section">
         <p>Hey there, welcome to my personal website! My name is Angelos Pelecanos. I was born and raised in <i>Cyprus</i>, a beautiful island in the Eastern Mediterranean. During my high school years, I was a pretty active participant in various <i>olympiads</i>. Right after high school, I served the National Guard for one year. During that year, I obtained the rank of <i>Second Lieutenant of Artillery</i>. I am currently an undergraduate student at MIT pursuing a double major in <i>Computer Science and Engineering</i> and <i>Mathematics</i> (Course 6-3 and 18).</p>
     </div>
-
-    <p>A Collapsible:</p>
-    <button class="collapsible">Open Collapsible</button>
-    <div class="content">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat.</p>
-    </div>
     
-    <p>Collapsible Set:</p>
-    <button class="collapsible">Open Section 1</button>
-    <div class="content">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat.</p>
-    </div>
-    <button class="collapsible">Open Section 2</button>
-    <div class="content">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat.</p>
-    </div>
-    <button class="collapsible">Open Section 3</button>
-    <div class="content">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat.</p>
-    </div>
-
-    <script>
-      var coll = document.getElementsByClassName("collapsible");
-      var i;
-
-      for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function () {
-          this.classList.toggle("active");
-          var content = this.nextElementSibling;
-          if (content.style.maxHeight) {
-            content.style.maxHeight = null;
-          } else {
-            content.style.maxHeight = content.scrollHeight + "px";
-          }
-        });
-      }
-    </script>
+    
 
     <div id="main-section">
       <div id="column-one">
+
         <h2>Major Coursework</h2>
         <i> (G): Graduate Level Class </i>
-        <p> <b> Fall 2019 </b> </p>
-        <i> 6.841/18.405 (G) Advanced Complexity Theory</i>
-        <ul>
-          <li><i>Ryan Williams</i></li>
-          <li><i>Final Project: Lifting Theorems</i></li>
-        </ul><br>
-        <i> 18.408 (G) Algorithmist's Toolkit</i>
-        <ul>
-          <li><i>Jonathan Kelner</i></li>
-        </ul><br>
-        <i> 6.854/18.415 (G) Advanced Algorithms</i>
-        <ul>
-          <li><i>David Karger, Aleksander Madry</i></li>
-          <li><i>Final Project: Space-Efficient Graph Traversal Algorithms</i></li>
-        </ul><br>
-        <i> 6.875/18.425 (G) Cryptography and Cryptanalysis</i>
-        <ul>
-          <li><i>Yael Kalai, Noah Stephens-Davidowitz</i></li>
-        </ul><br>
-        <p> <b> Spring 2019 </b> </p>
-        <i> 6.046 Design and Analysis of Algorithms</i>
-        <ul>
-          <li><i>Aleksander Madry, Bruce Tidor, Mauricio Karchmer</i></li>
-        </ul><br>
-        <i> 6.890 (G) Learning-Augmented Algorithms</i>
-        <ul>
-          <li><i>Constantinos Daskalakis, Piotr Indyk</i></li>
-          <li><i>Final Project: Learning-Augmented Binary Heaps</i></li>
-        </ul><br>
-        <i> 18.200 Principles of Discrete Mathematics</i>
-        <ul>
-          <li><i>Peter Shor, Asaf Ferber</i></li>
-          <li><i>Term Paper: 1-Factorizations of Hypergraphs</i></li>
-        </ul><br>
-        <p> <b> Fall 2018 </b> </p>
-        <i> 6.172 Performance Engineering of Software Systems</i>
-        <ul>
-          <li><i>Charles Leiserson, Tao Schardl</i></li>
-          <li><i>Optimized a parallel screensaver</i></li>
-          <li><i>Implemented an efficient memory allocator</i></li>
-          <li><i>Optimized a bot that was playing a game called Leiserchess</i></li>
-        </ul><br>
-        <i> 6.867 (G) Machine Learning</i>
-        <ul>
-          <li><i>David Sontag, Suvrit Sra, Devavrat Shah</i></li>
-          <li><i>Final Project: What can we learn from news about the stock market?</i></li>
-        </ul>
-        <p> <b> Spring 2018 </b> </p>
-        <i> 6.004 Computation Structures</i>
-        <ul>
-          <li><i>Professor Arvind, Daniel Sanchez, Silvina Hanono</i></li>
-          <li><i>Final Project: Implementing a processor in Bluespec</i></li>
-        </ul>
-        <i> 6.036 Introduction to Machine Learning</i>
-        <ul>
-          <li><i>Leslie Kaelbling, Duane Boning</i></li>
-        </ul>
+        
+        <button class="collapsible">Fall 2019</button>
+        <div class="content">
+          <i> 6.841/18.405 (G) Advanced Complexity Theory</i>
+          <ul>
+            <li><i>Ryan Williams</i></li>
+            <li><i>Final Project: Lifting Theorems</i></li>
+          </ul><br>
+          <i> 18.408 (G) Algorithmist's Toolkit</i>
+          <ul>
+            <li><i>Jonathan Kelner</i></li>
+          </ul><br>
+          <i> 6.854/18.415 (G) Advanced Algorithms</i>
+          <ul>
+            <li><i>David Karger, Aleksander Madry</i></li>
+            <li><i>Final Project: Space-Efficient Graph Traversal Algorithms</i></li>
+          </ul><br>
+          <i> 6.875/18.425 (G) Cryptography and Cryptanalysis</i>
+          <ul>
+            <li><i>Yael Kalai, Noah Stephens-Davidowitz</i></li>
+          </ul><br>
+        </div>
+        <button class="collapsible">Spring 2019</button>
+        <div class="content">
+          <i> 6.046 Design and Analysis of Algorithms</i>
+          <ul>
+            <li><i>Aleksander Madry, Bruce Tidor, Mauricio Karchmer</i></li>
+          </ul><br>
+          <i> 6.890 (G) Learning-Augmented Algorithms</i>
+          <ul>
+            <li><i>Constantinos Daskalakis, Piotr Indyk</i></li>
+            <li><i>Final Project: Learning-Augmented Binary Heaps</i></li>
+          </ul><br>
+          <i> 18.200 Principles of Discrete Mathematics</i>
+          <ul>
+            <li><i>Peter Shor, Asaf Ferber</i></li>
+            <li><i>Term Paper: 1-Factorizations of Hypergraphs</i></li>
+          </ul><br>
+        </div>
+        <button class="collapsible">Fall 2018</button>
+        <div class="content">
+          <i> 6.172 Performance Engineering of Software Systems</i>
+          <ul>
+            <li><i>Charles Leiserson, Tao Schardl</i></li>
+            <li><i>Optimized a parallel screensaver</i></li>
+            <li><i>Implemented an efficient memory allocator</i></li>
+            <li><i>Optimized a bot that was playing a game called Leiserchess</i></li>
+          </ul><br>
+          <i> 6.867 (G) Machine Learning</i>
+          <ul>
+            <li><i>David Sontag, Suvrit Sra, Devavrat Shah</i></li>
+            <li><i>Final Project: What can we learn from news about the stock market?</i></li>
+          </ul>
+        </div>
+
+        <button class="collapsible">Spring 2018</button>
+        <div class="content">
+          <i> 6.004 Computation Structures</i>
+          <ul>
+            <li><i>Professor Arvind, Daniel Sanchez, Silvina Hanono</i></li>
+            <li><i>Final Project: Implementing a processor in Bluespec</i></li>
+          </ul>
+          <i> 6.036 Introduction to Machine Learning</i>
+          <ul>
+            <li><i>Leslie Kaelbling, Duane Boning</i></li>
+          </ul>
+        </div>
       </div>
       
       <div id="column-two">
@@ -194,6 +162,23 @@
           </ul> <br>
       </div>
     </div>
+
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
 
   </body>
 </html>
