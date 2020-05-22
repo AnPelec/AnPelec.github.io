@@ -64,19 +64,23 @@ body {
   background-color: #f1f1f1;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* unvisited link */
 a:link {
-  color: red;
+  color: blue;
 }
 
 /* visited link */
 a:visited {
-  color: green;
+  color: blue;
 }
 
 /* mouse over link */
 a:hover {
-  color: hotpink;
+  color: blueviolet;
 }
 
 /* selected link */
